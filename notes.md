@@ -9,3 +9,6 @@ VSCode 支持 TypeScript, 开箱即用, 其他编辑器安装插件 “TypeScrip
 ```javascript
 //@ts-check
 ```
+
+## lesson 2
+鼠标悬浮在波浪线处，TS教你改代码
