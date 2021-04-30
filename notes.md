@@ -12,3 +12,5 @@ VSCode 支持 TypeScript, 开箱即用, 其他编辑器安装插件 “TypeScrip
 
 ## lesson 2
 鼠标悬浮在波浪线处，TS教你改代码
+
+day3
