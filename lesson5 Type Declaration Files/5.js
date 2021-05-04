@@ -1,6 +1,6 @@
 // @ts-check 
-/** @typedef { import('./types.d').ShipStorage}  ShipStorage */
-/** @typedef { import('./types.d').StorageItem } StorageItem */
+/** @typedef { import('./@types/types').ShipStorage}  ShipStorage */
+/** @typedef { import('./@types/types').StorageItem } StorageItem */
 
 const storage = {
     max: undefined,
@@ -32,8 +32,6 @@ function add(item) {
         storage.items.push(item)
         currentStorage += item.weight
     }
-
-    $('#numberOfItems').text(storage.items.length)
 }
 
 add({ weight: 3000 })
