@@ -22,11 +22,18 @@ function storageUsed() {
     return currentStorage
 }
 
+/**
+ * 
+ * @param {StorageItem} item 
+ */
+
 function add(item) {
     if (storage.max - item.weight >= storageUsed()) {
         storage.items.push(item)
         currentStorage += item.weight
     }
+
+    $('#numberOfItems').text(storage.items.length)
 }
 
 add({ weight: 3000 })
