@@ -7,3 +7,18 @@ declare function displaySearch(
     outputId: string,
     search: SearchFn
 ): void
+
+
+displaySearch('searchField', 'result', search)
+
+displaySearch(
+    'searchField',
+    'result',
+    function (query, tags) {
+        return Promise.resolve([{
+            title: `the ${query} test book`,
+            url: `/${query}-design-patterns`,
+            abstract: `A practical book on ${query}`
+        }])
+    }
+)
